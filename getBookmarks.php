@@ -60,7 +60,7 @@ function readAndGroupBookmarks($filename) {
 				'uuid'  => $uuid
 			       ];
 		}elseif (isset($_GET['uuid'])){
-			return [];
+			continue;
 		}
 
 		if (!empty($topic) && !empty($category)) {
@@ -72,6 +72,9 @@ function readAndGroupBookmarks($filename) {
 		}
 	}
 
+	if (isset($_GET['uuid'])){
+		return [];
+	}
 	return $groupedBookmarks;
 }
 ?>
