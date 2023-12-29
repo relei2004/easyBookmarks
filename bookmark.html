@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="texts.css">
+		<script src="checklogin.js"></script>
+		<title id="editBmTitle"></title>
+	</head>
+	<body>
+		<div id="myEasyBookmarkPopup" >
+			<form id="myForm" action="bookmark.php"  method="post">
+				<h1 id="editBmHeader"></h1>
+				<label id="bmURL" for="url"></label><br>
+				<input type="text" id="url" name="url"><br><br>
+				<label id="bmTitle" for="title"></label><br>
+				<input type="text" id="title" name="title"><br><br>
+
+				<label id="bmLevel1" for="area"></label><br>
+				<div class="divCust">
+				<select id="area" name="area"></select>
+				<button class="bmPlusButton" type="button" onclick="checkCustomOption('area','customArea','addCustArea')"></button>
+				</div>
+
+				<br>
+				<div class="divCust">
+				<input type="text" id="customArea" name="customArea" style="display:none;" >
+				<button id="addCustArea" class="bmAddButton" style="display:none;" type="button" onclick="addCustOption(this, 'area','customArea')"></button>
+				</div>
+				<br>
+				<label id="bmLevel2"for="topic"></label><br>
+				<div class="divCust">
+				<select id="topic" name="topic">
+					<option value=""></option>
+				</select>
+				<button class="bmPlusButton" type="button" onclick="checkCustomOption('topic','customTopic','addCustTopic')"></button>
+				</div>
+
+				<br>
+				<div class="divCust">
+				<input type="text" id="customTopic" style="display:none;" >
+				<button id="addCustTopic" class="bmAddButton" style="display:none;" type="button" onclick="addCustOption(this, 'topic','customTopic')"></button>
+				</div>
+				<br>
+				<label id="bmLevel3" for="category"></label><br>
+				<div class="divCust">
+				<select id="category" name="category">
+					<option value=""></option>
+				</select>
+				<button class="bmPlusButton" type="button" onclick="checkCustomOption('category','customCategory','addCustCategory')"></button>
+				</div>
+				<br>
+				<div class="divCust">
+				<input type="text" id="customCategory" name="customArea" style="display:none;" >
+				<button id="addCustCategory" class="bmAddButton" style="display:none;" type="button" onclick="addCustOption(this, 'category','customCategory')"></button>
+				</div>
+				<br><br>
+
+				<input type="hidden" id="date" name="date">
+				<input type="hidden" id="time" name="time">
+				<input type="hidden" id="uuid" name="uuid" >
+				<button id="saveButton" type="submit"></button>
+				<button id="closeButton" type="button"></button>
+			</form>
+		</div>
+		<script src="bookmark.js"></script>
+	</body>
+</html>
+
