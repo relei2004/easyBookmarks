@@ -15,7 +15,7 @@ This project aims to solve the problem of managing bookmarks across different op
        window.open(url, 'bookyBookmarklet', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no').focus();
    }());
 
-    Create a bookmark: Instead of a URL, copy the above Bookmarklet script and name the bookmark "Add Bookmark".
+Create a bookmark: Instead of a URL, copy the above Bookmarklet script and name the bookmark "Add Bookmark".
 
 Usage
 
