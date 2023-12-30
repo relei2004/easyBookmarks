@@ -1,18 +1,18 @@
 
 #bmLoginTitle::after {
-	content: "Anmeldung";
+	content: "Login";
 }
 #bmLoginHeader::after {
-	content: "Hier musst eini";
+	content: "Login";
 }
 #bmLoginUser::after {
-	content: "Wer bist";
+	content: "User";
 }
 #bmLoginPasswd::after {
-	content: "Mir kannsts soagn";
+	content: "Password";
 }
 #bmLoginButton::after {
-	content: "Und Los!";
+	content: "Login";
 }
 
 
@@ -26,36 +26,36 @@
 }
 
 #bmMainHeader::after {
-	content: "My Bookmarks";
+	content: "Your Easy Bookmarks";
 }
 
 #editBmHeader::after {
-	content: "Kopf";
+	content: "Bookmark";
 }
 #editBmTitle::after {
-	content: "Titel";
+	content: "Bookmark";
 }
 .bmPlusButton::after {
-	content: "Plus";
+	content: "+";
 }
 
 .bmAddButton::after {
-	content: "Dazu";
+	content: ">";
 }
 
 #searchButton::after {
-	content: "Ich schau mal";
+	content: "Search";
 }
 #searchReset::after {
-	content: "Mach weg";
+	content: "X";
 }
 
 
 #closeButton::after {
-	content: "Tschau";
+	content: "Close";
 }
 #saveButton::after {
-	content: "Ich merke es mir";
+	content: "Save";
 }
 
 #bmLevel1::after {
@@ -68,12 +68,12 @@
 	content: "Level3";
 }
 #bmTitle::after {
-	content: "Beschreibung";
+	content: "Desription";
 }
 #bmURL::after {
-	content: "Verweis";
+	content: "URL";
 }
 
 #delConfirm::before{
-	content: "Löschen";
+	content: "Delete?";
 }
